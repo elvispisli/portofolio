@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Elvis Portfolio</title>
+    <link rel="stylesheet" href="./css/projectStyle.css">
+</head>
+<body>
+    <button class="back-button">←</button>
+
+    <div class="container">
+        <header class="project-header">
+            <h1>Personal Portofolio</h1>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Client</div>
+                    <div class="meta-value">Msc. Hersi</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Timeline</div>
+                    <div class="meta-value">3 weeks</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Worked By</div>
+                    <div class="meta-value">Elvis Pisli</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Year</div>
+                    <div class="meta-value">2025</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="project-gallery">
+            <div class="gallery-item">
+                <img src="./img/portofolioHome.jpg" alt="Project Screenshot 1" style="height: 290px;">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/portofolioProject.jpg" alt="Project Screenshot 2">
+            </div>
+            <div class="gallery-item">
+                <img src="./img//api/placeholder/600/400" alt="Project Screenshot 3">
+            </div>
+        </div>
+
+        <div class="project-content">
+            <div class="content-main">
+                <div class="content-section">
+                    <h3>Overview</h3>
+                    <p>A personal portfolio website is a platform where you showcase your skills, achievements, and projects in a professional yet personal way. It's like an interactive resume that highlights your talents and personality, helping you stand out to potential clients, employers, or collaborators.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Challenge</h3>
+                    <p>The main challenge was ensuring the website looks great and functions well on all devices (desktops, tablets, and mobile phones).</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Solution</h3>
+                    <p>Using CSS Flexbox or Grid for layout designs. Using media querie for different screen sizes</p>
+                </div>
+
+            </div>
+
+            <div class="content-sidebar">
+                <div class="content-section">
+                    <h3>Technologies Used</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">HTML</span>
+                        <span class="tech-item">CSS</span>
+                        <span class="tech-item">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h3>Key Features</h3>
+                    <p>• User Authentication and Role Management<br></p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Visit Project</h3>
+                    <a href="#" style="color: #2EE59D; text-decoration: none;">View Live Site →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.back-button').addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Elvis Portfolio</title>
+    <link rel="stylesheet" href="./css/projectStyle.css">
+</head>
+<body>
+    <button class="back-button">←</button>
+
+    <div class="container">
+        <header class="project-header">
+            <h1>Bug Tracer</h1>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Client</div>
+                    <div class="meta-value">School Project</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Timeline</div>
+                    <div class="meta-value">3 months</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Worked by</div>
+                    <div class="meta-value">Elvis Pisli & Egzon Todori</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Year</div>
+                    <div class="meta-value">2023</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="project-gallery">
+            <div class="gallery-item">
+                <img src="./img/bugLogIn.jpg" alt="Project Screenshot 1">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/bugIssues.jpg" alt="Project Screenshot 2">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/bugUser.jpg" alt="Project Screenshot 3">
+            </div>
+        </div>
+
+        <div class="project-content">
+            <div class="content-main">
+                <div class="content-section">
+                    <h3>Overview</h3>
+                    <p>An application designed for task management and bug tracking (Bug Tracer). It enables teams to assign tasks, track their progress, and collaborate through comments for updates or additional details.
+                        With features like task assignment, progress monitoring, and real-time communication, the application ensures better organization and efficiency in handling tasks and resolving issues within a team. Its an essential tool for streamlining workflows and improving productivity in collaborative environments.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Challenge</h3>
+                    <p> Ensuring that only authorized users can access, modify, or perform specific actions within the application is crucial for security and functionality. Managing user roles and permissions requires a robust system to control who can do what and on which resources (tasks, bugs, comments, etc.)</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Solution</h3>
+                    <p>
+                        Create a robust role-based access control (RBAC) system.
+                        Clearly define role permissions in your database (e.g., who can assign tasks, edit them, or close bugs).
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-sidebar">
+                <div class="content-section">
+                    <h3>Technologies Used</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">.Net</span>
+                        <span class="tech-item">C#</span>
+                        <span class="tech-item">SQL</span>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h3>Key Features</h3>
+                    <p>• User Authentication and Role Management<br>
+                       • Task and Bug Management<br>
+                       • Commenting and Collaboration<br>
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Visit Project</h3>
+                    <a href="#" style="color: #2EE59D; text-decoration: none;">View Live Site →</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelector('.back-button').addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

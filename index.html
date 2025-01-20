@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvis - Portfolio</title>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <button class="menu-btn">☰</button>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Elvis Pisli</h1>
+                <p>Web Designer<br>& Developer</p>
+            </div>
+            <img src="./img/WhatsApp Image 2025-01-19 at 19.20.09_4cc5918a.jpg" alt="Profile" class="profile-img">
+            <div class="contact-info">
+                <p>elvispisli23@gmail.com</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-btn">𝕏</a>
+                <a href="#" class="social-btn">⌨️</a>
+            </div>
+            <a href="/resume.pdf" class="hire-btn" download>Download CV</a>
+            <p class="copyright">© 2025 Elvis. All Rights Reserved</p>
+        </aside>
+
+        <main class="main-content">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+
+            <section id="home" class="active">
+                <h2 class="hero-title">Hi from <span>Elvis</span>,<br>Web Designer and Developer</h2>
+                <p class="hero-subtitle">I design and code beautifully simple things and i love what i do.<br>Just simple like that!</p>
+            </section>
+
+            <section id="about">
+                <h2 class="hero-title">About <span>Me</span></h2>
+                <p class="hero-subtitle">
+                    
+                    Im a 20-year-old web developer with a deep passion for programming. Currently, I'm pursuing a Bachelor's degree in Computer Science, which allows me to continuously expand my knowledge and explore the latest advancements in web development.
+                </p>
+                <h3 class="hero-title">My <span>Programming</span> Languages</h3>
+                <div class="flex-languages">
+                    <span class="languages">HTML</span>
+                    <span class="languages">CSS</span>
+                    <span class="languages">JavaScript</span>
+                    <span class="languages">React</span>
+                    <span class="languages">NodeJS</span>
+                    <span class="languages">C#</span>
+                    <span class="languages">Django</span>
+                    <span class="languages">SQL</span>
+                    <span class="languages">Python</span>
+                </div>
+
+            </section>
+
+            <section id="projects">
+                <h2 class="hero-title">My <span>Projects</span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Personal Website</h3>
+                        <p>Built a personalized portfolio website to highlight projects and skills</p>
+                        <a href="personalWeb.html" class="hire-btn"> More </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Bug Tracer</h3>
+                        <p>Task management and bug tracking app where teams can assign tasks</p>
+                        <a href="bugTracer.html" class="hire-btn"> More </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2 class="hero-title">Education & <span>Experience</span></h2>
+                <!-- <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>2023 - Present</h3>
+                        <p>Bachelor Computer Science<br>Beder University</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>2021 - 2022</h3>
+                        <p>Internship<br>Dominusoft , Rr: “Myslym Shyri”, Tiranë</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>2019 - 2023</h3>
+                        <p>Branch IT “Programming”<br>Shkolla Teknike Elektrike “Gjergj Canco”</p>
+                    </div>
+                </div> -->
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3 class="timeline-title">Bachelor "Computer Science"</h3>
+                        <p class="timeline-company">Beder University</p>
+                    </div>
+            
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 - 2022</div>
+                        <h3 class="timeline-title">Internship Web Developer</h3>
+                        <p class="timeline-company">Dominusoft , Rr: “Myslym Shyri”, Tiranë</p>
+                    </div>
+            
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2019 - 2023</div>
+                        <h3 class="timeline-title">Branch IT “Programming”</h3>
+                        <p class="timeline-company">Shkolla Teknike Elektrike "Gjergj Canco"</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2 class="hero-title">Get in <span>Touch</span></h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="hire-btn">Send Message</button>
+                </form>
+            </section>
+
+            <section id="blog">
+                <h2 class="hero-title">Latest <span>Posts</span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Framer Development Tips</h3>
+                        <p>Essential tips for modern Framer development...</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Design Systems</h3>
+                        <p>Building scalable design systems...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // // Navigation handling
+        // document.querySelectorAll('.nav-menu a').forEach(link => {
+        //     link.addEventListener('click', (e) => {
+        //         e.preventDefault();
+                
+        //         // Remove active class from all links and sections
+        //         document.querySelectorAll('.nav-menu a').forEach(l => l.classList.remove('active'));
+        //         document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+                
+        //         // Add active class to clicked link
+        //         link.classList.add('active');
+                
+        //         // Show corresponding section
+        //         const targetId = link.getAttribute('href').slice(1);
+        //         document.getElementById(targetId).classList.add('active');
+        //     });
+        // });
+
+        // // Form submission
+        // document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
+        //     e.preventDefault();
+        //     alert('Message sent! (Demo only)');
+        // });
+
+          // Navigation handling
+          document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Remove active class from all links and sections
+                document.querySelectorAll('.nav-menu a').forEach(l => l.classList.remove('active'));
+                document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+                
+                // Add active class to clicked link
+                link.classList.add('active');
+                
+                // Show corresponding section
+                const targetId = link.getAttribute('href').slice(1);
+                document.getElementById(targetId).classList.add('active');
+
+                // Close mobile menu after clicking a link
+                document.querySelector('.nav-menu').classList.remove('active');
+            });
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // Form submission
+        document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message sent! (Demo only)');
+        });
+    </script>
+</body>
+</html>
