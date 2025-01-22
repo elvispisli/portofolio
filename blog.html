@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Tips Blog</title>
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button class="back-button"><i class="fa-solid fa-arrow-left"></i></button>
+    
+    <div class="container">
+        <header>
+            <h1>Developer Tips & Best Practices</h1>
+            <div class="header-info">
+                <div class="info-item">
+                    <span class="info-label">Last Updated</span>
+                    <span class="info-value">January 22, 2025</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Category</span>
+                    <span class="info-value">Development</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Author</span>
+                    <span class="info-value">Tech Team</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Reading Time</span>
+                    <span class="info-value">5 min</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <h2>Clean Code Principles</h2>
+                <div class="article-meta">
+                    <span class="tag">Best Practices</span>
+                    <span class="tag">Code Quality</span>
+                </div>
+                <p>
+                    Writing clean, maintainable code is essential for long-term project success. Here are key principles to follow:
+                </p>
+                <ul>
+                    <li>Use meaningful variable and function names</li>
+                    <li>Keep functions small and focused on a single task</li>
+                    <li>Write self-documenting code</li>
+                    <li>Follow consistent formatting</li>
+                </ul>
+                <pre><code>// Bad example
+function calc(a, b) {
+    return a + b;
+}
+
+// Good example
+function calculateTotalPrice(basePrice, taxAmount) {
+    return basePrice + taxAmount;
+}</code></pre>
+            </article>
+
+            <article>
+                <h2>Git Best Practices</h2>
+                <div class="article-meta">
+                    <span class="tag">Version Control</span>
+                    <span class="tag">Collaboration</span>
+                </div>
+                <p>
+                    Effective version control is crucial for team collaboration. Here are essential Git practices:
+                </p>
+                <ul>
+                    <li>Write clear, descriptive commit messages</li>
+                    <li>Create feature branches for new development</li>
+                    <li>Regularly pull from main to stay updated</li>
+                    <li>Review changes before committing</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Performance Optimization</h2>
+                <div class="article-meta">
+                    <span class="tag">Performance</span>
+                    <span class="tag">Optimization</span>
+                </div>
+                <p>
+                    Optimize your applications for better user experience:
+                </p>
+                <ul>
+                    <li>Minimize HTTP requests</li>
+                    <li>Use lazy loading for images</li>
+                    <li>Implement caching strategies</li>
+                    <li>Optimize database queries</li>
+                </ul>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Developer Tips Blog. Keep coding, keep learning!</p>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('.back-button').addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #121212;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    min-width: 100%;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.header-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-label {
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.info-value {
+    color: #2EE59D;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+article {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2EE59D;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.article-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background-color: rgba(68, 204, 102, 0.1);
+    color: #2EE59D;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+}
+
+ul {
+    margin: 15px 0;
+    padding-left: 20px;
+    color: #bbb;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #121212;
+    color: #2EE59D;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #bbb;
+}
+/* Back Button */
+.back-button {
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    background-color: #141414;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.back-button:hover {
+    background-color: #2EE59D;
+    color: #000;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    header{
+        border-radius: 20px;
+        min-width: auto;
+    }
+    header h1{
+        padding-top: 10px;
+    }
+    .header-info{
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    body {
+        padding: 16px;
+    }
+
+    .back-button {
+        top: 16px;
+        left: 16px;
+    }
+}

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elvis - Portfolio</title>
     <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <button class="menu-btn">☰</button>
+    <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
 
     <div class="layout">
         <aside class="sidebar">
@@ -20,10 +21,10 @@
                 <p>elvispisli23@gmail.com</p>
             </div>
             <div class="social-links">
-                <a href="#" class="social-btn">𝕏</a>
-                <a href="#" class="social-btn">⌨️</a>
+                <a href="https://al.linkedin.com/in/elvis-pisli-b4b56825a?trk=people-guest_people_search-card" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/elvispisli/" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href="/resume.pdf" class="hire-btn" download>Download CV</a>
+            <a href="./Elvis Pisli cv.pdf" download target="_blank" class="download-btn">Download CV</a>
             <p class="copyright">© 2025 Elvis. All Rights Reserved</p>
         </aside>
 
@@ -67,36 +68,23 @@
 
             <section id="projects">
                 <h2 class="hero-title">My <span>Projects</span></h2>
-                <div class="projects-grid">
+                <div class="projects-flex">
                     <div class="project-card">
                         <h3>Personal Website</h3>
                         <p>Built a personalized portfolio website to highlight projects and skills</p>
-                        <a href="personalWeb.html" class="hire-btn"> More </a>
+                        <a href="personalWeb.html" class="download-btn"> More </a>
                     </div>
                     <div class="project-card">
                         <h3>Bug Tracer</h3>
                         <p>Task management and bug tracking app where teams can assign tasks</p>
-                        <a href="bugTracer.html" class="hire-btn"> More </a>
+                        <a href="bugTracer.html" class="download-btn"> More </a>
                     </div>
                 </div>
+                
             </section>
 
             <section id="education">
                 <h2 class="hero-title">Education & <span>Experience</span></h2>
-                <!-- <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>2023 - Present</h3>
-                        <p>Bachelor Computer Science<br>Beder University</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>2021 - 2022</h3>
-                        <p>Internship<br>Dominusoft , Rr: “Myslym Shyri”, Tiranë</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>2019 - 2023</h3>
-                        <p>Branch IT “Programming”<br>Shkolla Teknike Elektrike “Gjergj Canco”</p>
-                    </div>
-                </div> -->
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
@@ -136,20 +124,22 @@
                         <label for="message">Message</label>
                         <textarea id="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="hire-btn">Send Message</button>
+                    <button type="submit" class="download-btn">Send Message</button>
                 </form>
             </section>
 
             <section id="blog">
                 <h2 class="hero-title">Latest <span>Posts</span></h2>
-                <div class="projects-grid">
+                <div class="projects-flex">
                     <div class="project-card">
-                        <h3>Framer Development Tips</h3>
-                        <p>Essential tips for modern Framer development...</p>
+                        <h3>Development Tips</h3>
+                        <p>Essential tips for development...</p>
+                        <a href="./blog.html" class="download-btn"> More </a>
                     </div>
                     <div class="project-card">
                         <h3>Design Systems</h3>
                         <p>Building scalable design systems...</p>
+                        <a href="#" class="download-btn"> Cooming soon... </a>
                     </div>
                 </div>
             </section>
@@ -157,30 +147,6 @@
     </div>
 
     <script>
-        // // Navigation handling
-        // document.querySelectorAll('.nav-menu a').forEach(link => {
-        //     link.addEventListener('click', (e) => {
-        //         e.preventDefault();
-                
-        //         // Remove active class from all links and sections
-        //         document.querySelectorAll('.nav-menu a').forEach(l => l.classList.remove('active'));
-        //         document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
-                
-        //         // Add active class to clicked link
-        //         link.classList.add('active');
-                
-        //         // Show corresponding section
-        //         const targetId = link.getAttribute('href').slice(1);
-        //         document.getElementById(targetId).classList.add('active');
-        //     });
-        // });
-
-        // // Form submission
-        // document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
-        //     e.preventDefault();
-        //     alert('Message sent! (Demo only)');
-        // });
-
           // Navigation handling
           document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', (e) => {
